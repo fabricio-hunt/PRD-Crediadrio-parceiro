@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
+        <script> 
+        function scrollToSection1(formulario) {
+                    var section = document.getElementById('formulario');
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+
+        function scrollToSection2(gridContent) {
+                    var targetElement = document.getElementById("gridContent");
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: "smooth" });
+                    }
+                }
+                    </script>
+        
+    <style>
+        main.conteudoespecial-Bemol {
+            z-index: 1;
+            color: #104BBE;
+            box-sizing: border-box;
+        }
+
+        main.conteudoespecial-Bemol p {
+            font-size: 20px;
+        }
+
+        main.conteudoespecial-Bemol img {
+            max-width: 80%;
+            width: 100%;
+            margin: auto;
+        }
+
+        main.conteudoespecial-Bemol a{
+                list-style: none; 
+                text-decoration: none;
+            }
+
+        main.conteudoespecial-Bemol .button-amarelo {
+            display: block;
+            background-color: #FDC001;
+            color: #012385;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            width: 280px !important;
+            max-width: 100%;
+            cursor: pointer;
+        }
+
+        main.conteudoespecial-Bemol .button-azul {
+            display: block;
+            background-color: #012385;
+            color: #FFF;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            width: 280px !important;
+            max-width: 100%;
+            cursor: pointer;
+        }
+
+        main.conteudoespecial-Bemol .button-borda-azul {
+            display: block;
+            border: 2px solid #012385;
+            color: #012385;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            padding: 12px 30px;
+            background-color: transparent;
+            border-radius: 10px;
+            font-size: 15px;
+            margin-top: 15px;
+            width: 280px !important;
+            max-width: 100%;
+            cursor: pointer;
+        }
+
+        main.conteudoespecial-Bemol .header--crediarioparceiro {
+            display: flex;
+            width: fit-content;
+            gap: 15px;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 8px auto;
+        }
+
+        main.conteudoespecial-Bemol .header--crediarioparceiro p {
+            /*margin-bottom: initial;*/
+            font-size: 14px;
+            border-left: 2px solid #104BBE;
+            padding-left: 8px;
+        }
+
+        main.conteudoespecial-Bemol .header--crediarioparceiro img {
+            height: 30px;
+            flex-basis: content;
+        }
+
+        main.conteudoespecial-Bemol .bg-hero--cor {
+            background-color: #005ae8;
+        }
+
+        main.conteudoespecial-Bemol .bg-hero--imagem {
+            background: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-bg-parceiro-local.png) center no-repeat;
+            background-size: contain;
+        }
+
+        main.conteudoespecial-Bemol .bg-hero--imagem>div {
+            background: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-elemento-bg-crediario.png) center 4% no-repeat;
+            background-size: cover;
+        }
+
+        main.conteudoespecial-Bemol .bg-hero--imagem>div>div {
+            background: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-bg-icon-crediario-parceiro.png) left bottom no-repeat;
+            background-size: 50%;
+        }
+
+        main.conteudoespecial-Bemol .bg-hero--imagem>div>div>div {
+            background: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-personas-crediario-parceiro.png) center bottom no-repeat;
+            background-size: 360px;
+        }
+
+        main.conteudoespecial-Bemol .grid-2.container-1200.hero {
+            height: 450px;
+            align-content: center;
+        }
+
+        main.conteudoespecial-Bemol .hero h2 {
+            color: #FFF;
+            font-weight: 300;
+            font-size: 25px;
+        }
+
+        main.conteudoespecial-Bemol .hero article {
+            color: #FFF;
+            width: 230px;
+            margin: auto;
+        }
+
+
+        main.conteudoespecial-Bemol .container--form-parceiro {
+            grid-template-columns: 1fr 2fr !important;
+        }
+
+        main.conteudoespecial-Bemol .container--form-parceiro h2 {
+            font-size: 20px;
+        }
+
+        main.conteudoespecial-Bemol .container--form-parceiro h2::before {
+            content: '';
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100px;
+            width: 100px;
+            display: block;
+            background-image: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-icon-formulario.png);
+            background-size: 45%;
+            background-color: #012285;
+            border-radius: 20px;
+            margin-block: 20px;
+        }
+
+        main.conteudoespecial-Bemol .container--form-parceiro iframe#form-parceiro {
+            border: none;
+            max-width: 95%;
+            width: 100%;
+            margin: auto;
+            height: 500px;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 1px 1px 6px #0000002b;
+        }
+
+        main.conteudoespecial-Bemol .estilo--vantagens h3 {
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        main.conteudoespecial-Bemol .estilo--vantagens h3::before {
+            content: '';
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100px;
+            width: 100px;
+            display: block;
+            background-size: 50%;
+            background-color: #012285;
+            border-radius: 20px;
+            margin: 0px auto 20px auto;
+        }
+
+        main.conteudoespecial-Bemol .estilo--vantagens.parceiros h3:nth-child(1)::before {
+            background-image: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-icon-na-hora.png);
+        }
+
+        main.conteudoespecial-Bemol .estilo--vantagens.parceiros h3:nth-child(2)::before {
+            background-image: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-icon-digital.png);
+            background-size: 30%;
+        }
+
+        main.conteudoespecial-Bemol .estilo--vantagens.parceiros h3:nth-child(3)::before {
+            background-image: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-icon-menores-taxas.png);
+        }
+
+        main.conteudoespecial-Bemol .estilo--vantagens.parceiros h3:nth-child(4)::before {
+            background-image: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-icon-opcao.png);
+        }
+
+        main.conteudoespecial-Bemol .estilo--vantagens.vantagens h3:nth-child(0)::before {
+            background-image: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-icon-pontos-de-bonus-bemol.png);
+        }
+
+        main.conteudoespecial-Bemol .estilo--vantagens.vantagens h3:nth-child(1)::before {
+            background-image: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/estrela-de-bonus.png);
+        }
+
+        main.conteudoespecial-Bemol .estilo--vantagens.vantagens h3:nth-child(2)::before {
+            background-image: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-icon-parceiros.png);
+        }
+
+        main.conteudoespecial-Bemol .estilo--vantagens.vantagens h3:nth-child(3)::before {
+            background-image: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-icon-opcao.png);
+        }
+
+        main.conteudoespecial-Bemol .estilo--vantagens.vantagens h3:nth-child(4)::before {
+            background-image: url(https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-icon-digital.png);
+            background-size: 30%;
+        }
+
+        main.conteudoespecial-Bemol .container--parceiros {
+            grid-column-gap: 5px !important;
+        }
+
+        main.conteudoespecial-Bemol .container--parceiros hr {
+            border-radius: 50%;
+            height: 4px;
+            background-color: #012385;
+            opacity: 0.3;
+            margin-top: 30px
+        }
+
+        main.conteudoespecial-Bemol .container--parceiros img {
+            border-radius: 20px;
+            box-shadow: 1px 1px 5px #b5b4b478;
+            padding: 20px;
+            height: 100px !important;
+            object-fit: scale-down;
+            width: 90% !important;  
+            margin: auto;
+        }
+
+        main.conteudoespecial-Bemol ul li {
+            text-align: left;
+            font-size: 17px;
+        }
+
+        main.conteudoespecial-Bemol .buttons--rodape h2 {
+            width: 250px;
+            font-size: 25px;
+        }
+        /*Desktop*/
+        main.conteudoespecial-Bemol .grid-2-m.espacamento-int.container--parceiros {
+            width: 350px;
+            padding-bottom: 350px
+        }
+
+        main.conteudoespecial-Bemol .grid-2-m.espacamento-int.container--parceiros img {
+            width: 80% !important;
+        }
+
+        @media (max-width:769px) {
+            main.conteudoespecial-Bemol {
+                text-align: center;
+            }
+
+            main.conteudoespecial-Bemol button {
+                margin: auto;
+            }
+
+            main.conteudoespecial-Bemol .header--crediarioparceiro img {
+                height: 25px;
+            }
+
+            main.conteudoespecial-Bemol .grid-2.container-1200.hero {
+                height: 500px;
+                align-content: end;
+                padding-block: 2px; 
+                justify-content: center;
+            }
+
+            main.conteudoespecial-Bemol .bg-hero--imagem>div>div>div {
+                background-size: 430px;
+            }
+
+            main.conteudoespecial-Bemol .hero article.m-view {
+                display: flex;
+                align-content: space-between;
+                flex-wrap: wrap;
+                height: inherit;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            main.conteudoespecial-Bemol .hero article.m-view>div {
+                margin: auto;
+            }
+
+            main.conteudoespecial-Bemol .hero article.m-view button {
+                display: block;
+            }
+
+            main.conteudoespecial-Bemol .hero .button-amarelo {
+                margin-bottom: 20px;
+            }
+
+
+            main.conteudoespecial-Bemol .container--form-parceiro {
+                grid-template-columns: 1fr !important;
+            }
+
+            main.conteudoespecial-Bemol .container--form-parceiro h2::before {
+                margin: auto;
+                margin-block: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="conteudoespecial-Bemol">
+        <section>
+            <div class="header--crediarioparceiro">
+                <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-marca-crediario-parceiro-bemol.svg"
+                    alt="">
+                <p class="d-view "><strong></strong> <span class="umProduto">Um produto<span></p>
+                <p class="m-view"><strong></strong></p>
+                <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-marca-bemol.svg"
+                    alt="">
+                <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-marca-contabemol.png"
+                    alt="">
+            </div>
+        </section>
+        <section class="bg-hero--cor">
+            <div class="bg-hero--imagem">
+                <div>
+                    <div>
+                        <div>
+                            <div class="grid-2 container-1200 hero">
+                                <article class="d-view">
+                                    <h2>Para <b>alavancar</b> o faturamento do <b>seu negócio</b></h2>
+                                    <button  class="button-amarelo" onclick="scrollToSection1('formulario')">Quero ser<br>Parceiro Bemol</button>
+
+                                </article>
+                                <article class="d-view">
+                                    <h2><b>Crediário Bemol</b> para <b>comprar</b> nos <b>Parceiros Bemol</b></h2>
+                                    <a href="https://appcontabemol.page.link/download"><button class="button-azul">Parcele com<br>Crediário Parceiro</button></a>
+                                   
+                                </article>
+                                <article class="m-view">
+                                    <h2>Parcele <b>suas compras</b> com <b>Crediário Bemol</b> nos <b>Parceiros
+                                            Bemol</b></h2>
+                                    <div>
+                                        <button  class="button-amarelo" onclick="scrollToSection1('formulario')">Quero ser Parceiro Bemol</button>
+                                        <a href="https://appcontabemol.page.link/download"><button class="button-azul">Parcele com<br>Crediário Parceiro</button></a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-800 container--parceiros">
+    <div class="container-flex-1"> 
+            <div class="texto-centralizado espacamento-sup">
+                <h2>Parceiros Bemol</h2>
+            <div class="grid-4-2  grid-2-4-3">
+                <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-marcas-glow-t-shirts.png"
+                    alt="">
+                <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-marcas-arte-grafica-barbosa.png"
+                    alt="">
+                <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-marcas-amanda-make-store.png"
+                    alt="">
+                <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-marcas-esmalteria-perola-brasil.png"
+                    alt=""> 
+                    <button class="read-more" onclick="scrollToSection2('gridContent')"> Ver todos> </button>
+
+            </div>
+        </div> 
+    </div>
+
+            <hr>
+        </section>
+        <section class="container-1200 container-1200-1">
+            <div class="grid-2-invertido espacamento-sup">
+                <article class="conteudo-centralizado">
+                    <h2>O que é o Crediário Parceiro?</h2>
+                    <p>Disponível em <b>Autazes</b>, agora os seus clientes podem utilizar o <b>Crediário Bemol</b> para
+                        comprar em diversos <b>Parceiros Bemol</b>.</p>
+                    <a a href="https://appcontabemol.page.link/download"><button class="button-azul">Acesse pela Conta Bemol</button></a> 
+                </article>
+                <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-app-crediario-bemol.png"
+                    alt="">
+            </div>
+        </section>
+        <section class="container-1200">
+            <div class="grid-2 espacamento-sup container--form-parceiro" id="formulario">
+                <article class="conteudo-centralizado">
+                    <h2 style="font-size: 40px;">Preencha o formulário<br> para se tornar um <br> Parceiro Bemol</h2>
+                </article>
+                <iframe id="form-parceiro" src='https://app.pipefy.com/public/form/xZojF2O-?embedded=true'></iframe>
+            </div>
+
+        </section>
+        <section class="container-800 espacamento-sup">
+            <article class="texto-centralizado">
+                <h2>Mais vantagens de ser Parceiro Bemol</h2>
+            </article>
+            <div class="grid-4-2 espacamento-int estilo--vantagens parceiros">
+                <h3>Crédito do cliente concedido na hora</h3>
+                <h3>Transações digitais e sem maquininha</h3>
+                <h3>Menores taxas e muitas vantagens</h3>
+                <h3>Mais uma opção de parcelamento para o cliente</h3>
+            </div>
+        </section>
+        <section>
+            <div class="grid-2 container-1200">
+                <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-persona-para-comprar.png"
+                    alt="">
+                <article class="conteudo-centralizado">
+                    <h2>Para comprar em Parceiros Bemol</h2>
+                    <p>Clientes podem usar o <b> <br> Crediário da Bemol
+                        para parcelar<br> com <b>limite extra</b> nos <b>Parceiros Bemol</b>! </p>
+                     <a a href="https://appcontabemol.page.link/download"><button class="button-azul">Acesse o aplicativo</button> </a>
+                </article>
+            </div>
+        </section>
+        <section class="container-1200">
+            <article class="texto-centralizado espacamento-sup">
+                <h2>Vantagens de usar <br> o Crediário Parceiro</h2>
+            </article>
+            <div class="grid-4-2 espacamento-int estilo--vantagens vantagens">
+                <h3>Diversos Parceiros Bemol</h3>
+                <h3>Pontos de Bônus Bemol</h3>
+                <h3>Parcele sem cartão</h3>
+                <h3>Compra personalizada e digital!</h3>
+            </div>
+        </section>
+        <section class="container-800 espacamento-sup testep">
+            <div class="grid-2" id="grid-recolhivel">
+                <article>
+                    <div class="grid-2__content"  id="gridContent">
+                    <h2>Confira nossos Parceiros Bemol em Autazes:</h2>
+                    <ul>
+                        <li>Amanda Make Store</li>
+                        <li>Café e Lanche do Lander</li>
+                        <li>Comercial Jack</li>
+                        <li>Delícias da Fran</li>
+                        <li>Esmalteria Perolla Brasil</li>
+                        <li>Espaço Costura M A</li>
+                        <li>Gb Studio</li>
+                        <li>Glow T-shirts</li>
+                        <li>Gráfica Barbosa Estamparia e Personalização</li>
+                        <li>Haru Sushi</li>
+                        <li>ImpérioMake</li>
+                        <li>JEF variedades</li>
+                        <li>Loja HN Variedades</li>
+                        <li>Loja Miranda</li>
+                        <li>M Shoes</li>
+                        <li>MB Peças</li>
+                        <li>Melque M.A variedades</li>
+                        <li>Mercadinho Barbosa</li>
+                        <li>Mercadinho Fé em Deus</li>
+                        <li>Mercadinho Rebeka</li>
+                        <li>Mirian Vendas de veículos e imóveis</li>
+                        <li>Nomad Calçados</li>
+                        <li>Paiva modas</li>
+                        <li>Perfumaria da Lora</li>
+                        <li>Ponto do Boné</li>
+                        <li>Porteira Country</li>
+                        <li>Rosi Modas</li>
+                        <li>Salão Bellas</li>
+                        <li>Sayury Modas</li>
+                        <li>Tamara Cosméticos e Calçados</li>
+                        <li>Will Store</li>
+                    </ul> 
+                </div>
+                   <button class="verMaisParceiros" onclick="toggleContent()">Ver todos os Parceiros Bemol</button>
+
+                    <small><b>Em breve, em mais cidades.</b></small> 
+                </article>
+                <div class="grid-2-m espacamento-int container--parceiros">
+                    <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-marcas-glow-t-shirts.png"
+                        alt="">
+                    <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-marcas-arte-grafica-barbosa.png"
+                        alt="">
+                    <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-marcas-amanda-make-store.png"
+                        alt="">
+                    <img src="https://www.bemol.com.br/Custom/Content/Themes/Bemol/Templates/landings/2023/crediario-parceiro/img/lp-crediario-parceiro-bemol-marcas-esmalteria-perola-brasil.png"
+                        alt="">
+                </div>
+            </div>
+        </section>
+        <section class="container-800">
+            <div class="grid-2 espacamento-sup buttons--rodape">
+                <article>
+                    <h2>Parcele suas compras com o Crediário Parceiro!</h2>
+                   <a href="https://appcontabemol.page.link/download"><button class="button-azul">Abra sua Conta Bemol</button></a> 
+                </article>
+                <div class="conteudo-centralizado">
+                    <button  class="button-amarelo" onclick="scrollToSection1('formulario')">Quero ser Parceiro Bemol</button>
+
+                    <button class="button-borda-azul">Perguntas frequentes</button>
+                </div>
+            </div>
+        </section>
+        <div class="espacamento-sup"></div>
+
+        <footer>
+            <div class="footer-1">
+                <div class="footer-1__content"> 
+                <h2 class="footer-1__content-h2">Qualquer dúvida, consulte nossos<br>
+                    <b>canais de atendimento<b></h6>
+
+                    <div class="footer-1__contato--email">
+                        <h2>fala@contabemol.com.br</h2>
+                    </div>
+
+                    <div class="footer-1__contato--telefone">
+                        <h2>0800 726 8300</h2>
+                    </div>
+
+                    <div class="horario-atendimento">
+                        <p>Horário de atendimento<br>
+                            <b>Segunda-feira à Sábado</b> através do 0800-726-8300.<br>
+                            <b>Domingos e Feriados</b> através do fala@contabemol.<br>
+                        </p>
+                    </div>
+
+                    <div class="footer-1__icones-fim">
+                        <div class="footer-1__icones-fim-1"> 
+                        <img src="https://xjz93ig3lx.map.azionedge.net/Custom/Content/Themes/Bemol/Templates/landings/2023/conta-bemol/img/lp-conta-bemol-icon-instagram.png" alt="">
+                        <img src="https://xjz93ig3lx.map.azionedge.net/Custom/Content/Themes/Bemol/Templates/landings/2023/conta-bemol/img/lp-conta-bemol-icon-facebook.png" alt="">
+                        <img src="https://xjz93ig3lx.map.azionedge.net/Custom/Content/Themes/Bemol/Templates/landings/2023/conta-bemol/img/lp-conta-bemol-icon-youtube.png" alt="">
+                        <img src="https://xjz93ig3lx.map.azionedge.net/Custom/Content/Themes/Bemol/Templates/landings/2023/conta-bemol/img/lp-conta-bemol-icon-linkedin.png" alt="">
+                        <p>@contabemol </p>
+                        </div>
+
+                        <div class="footer-1__icones-fim-2">
+                            <img src="https://xjz93ig3lx.map.azionedge.net/Custom/Content/Themes/Bemol/Templates/landings/2023/conta-bemol/img/lp-conta-bemol-marca-conta-bemol-negativa.png" alt="">
+                            <img src="https://xjz93ig3lx.map.azionedge.net/Custom/Content/Themes/Bemol/Templates/landings/2023/conta-bemol/img/lp-conta-bemol-marca-bemol.png" alt="">
+                        </div>
+                    </div>
+                    
+                    </div>
+            </div>
+
+
+        </footer>
+                    
+
+    </main>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

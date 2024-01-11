@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+main.conteudoespecial-Bemol .footer-1{
+    width: 100%;
+    background: #003FBA;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+   
+}
+
+main.conteudoespecial-Bemol .footer-1__content{
+    margin-left: 150px;
+
+}   
+
+main.conteudoespecial-Bemol .footer-1__content-h2{
+    font-weight: 300;
+}
+
+main.conteudoespecial-Bemol .footer-1__contato--email{
+    background: url(https://xjz93ig3lx.map.azionedge.net/Custom/Content/Themes/Bemol/Templates/landings/2023/conta-bemol/img/lp-conta-bemol-icon-email.png);
+    background-size: 30px;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+}
+
+main.conteudoespecial-Bemol .footer-1__contato--telefone{
+    background: url(https://xjz93ig3lx.map.azionedge.net/Custom/Content/Themes/Bemol/Templates/landings/2023/conta-bemol/img/lp-conta-bemol-icon-telefone.png);
+    background-size: 30px;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+}
+
+main.conteudoespecial-Bemol .horario-atendimento{
+    background: url(https://xjz93ig3lx.map.azionedge.net/Custom/Content/Themes/Bemol/Templates/landings/2023/conta-bemol/img/lp-conta-bemol-icon-horarios.png);
+    background-size: 30px;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+}
+
+
+main.conteudoespecial-Bemol .horario-atendimento p{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+main.conteudoespecial-Bemol .footer-1 .footer-1__icones-fim{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+main.conteudoespecial-Bemol .footer-1__icones-fim .footer-1__icones-fim-1{
+    display: flex;
+    width: 28%;
+}
+
+main.conteudoespecial-Bemol .footer-1__icones-fim .footer-1__icones-fim-2{
+    margin-left: 120px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+main.conteudoespecial-Bemol .footer-1__icones-fim .footer-1__icones-fim-2 img{
+    width: 110px;
+    height: auto;
+    padding-left: 30px;
+}
+
+main.conteudoespecial-Bemol .footer-1 .footer-1__icones-fim-1 img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.footer-1 .footer-1__icones-fim p{
+    font-weight: 300;
+    font-size: 22px;
+}
+
+
+@media screen and (max-width: 375px) {
+
+    
+main.conteudoespecial-Bemol .footer-1{
+    width: 100%;
+    background: #003FBA;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+main.conteudoespecial-Bemol .footer-1__content{
+    font-size: 18px;
+    width: 95%;
+    margin: 0;
+    padding-left: 12px;
+}
+
+main.conteudoespecial-Bemol .footer-1__content-h2{
+    font-weight: 300;
+    font-size: 18px;
+}
+
+  
+main.conteudoespecial-Bemol .footer-1__contato--email h2{
+    font-size: 20px;
+ }
+
+ .footer-1__contato--telefone h2{
+    font-size: 20px;
+    padding: 10px;
+ }
+
+main.conteudoespecial-Bemol .horario-atendimento p{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+main.conteudoespecial-Bemol .footer-1 .footer-1__icones-fim{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+ 
+main.conteudoespecial-Bemol .footer-1__icones-fim .footer-1__icones-fim-1{
+    display: flex;
+    width: 75%;
+}
+
+main.conteudoespecial-Bemol .footer-1__icones-fim .footer-1__icones-fim-2{
+    display: flex;
+    align-items: center;
+    display: none;
+    
+}
+
+main.conteudoespecial-Bemol .footer-1__icones-fim .footer-1__icones-fim-2 img{
+    width: 90px;
+    height: auto;
+}
+
+main.conteudoespecial-Bemol .footer-1 .footer-1__icones-fim-1 img{
+    width: 23px;
+    height: 23px;
+}
+
+.footer-1 .footer-1__icones-fim p{
+    font-weight: 300;
+    font-size: 18px;
+}
+}
+   
